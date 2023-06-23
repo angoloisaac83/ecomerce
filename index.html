@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <script src="index.js"></script>
+
+</head>
+<body>
+  <div class="parent">
+    <div class="nav-bar">
+      <div class="nav-logo">
+        
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="menu" onclick="toggleMenu()">
+            <div class="menu-items">
+            <a href="">Collections
+            </a>
+            <a href="">Men
+             
+            </a>
+            <a href="">Women
+             
+            </a>
+            <a href="">About
+            
+            </a>
+            <a href="">Contact
+             
+            </a>
+            </div>
+          </div>
+
+        </div>
+        
+        <h1>sneakers</h1>
+
+      </div>
+      <nav>
+  <a href="">Collections
+    <span class="s"></span>
+  </a>
+  <a href="">Men
+    <span class="s"></span>
+  </a>
+  <a href="">Women
+    <span class="s"></span>
+  </a>
+  <a href="">About
+    <span class="s"></span>
+  </a>
+  <a href="">Contact
+    <span class="s"></span>
+  </a>
+</nav>
+<div class="nav-right">
+  <span class="badge">0</span>
+  <button onclick="close1()">
+  <svg width="22" height="22" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#69707D" fill-rule="nonzero"/></svg>
+</button>
+<div id="help-don" class="don">
+    <h2>cart</h2>
+    <header class="together">
+    <div class="cart-product">
+      <img class="item" src="/image-product-1-thumbnail.jpg" alt="">
+     <p> Fall Limited Sneakers Edition <span>$125.00 x <span class="no-of-items">3</span>  <b class="total">$375.00</b></span>
+     </p>
+     <img class="delete" src="/icon-delete.svg" alt="">
+
+    </div>
+    <span class="checkout">Checkout</span>
+</header>
+  </div>
+  <img src="/image-avatar.png" alt="">
+</div>
+</div>
+
+<section>
+  <div class="cart-images">
+    <div class="big-image">
+        <img id="mainImage" src="/image-product-1.jpg" alt="">
+    </div>
+    <span class="arrow">
+      <img id="previous" src="/icon-previous.svg" alt="">
+      <img id="next" src="/icon-next.svg" alt="">
+    </span>
+    <div class="smaller-images">
+      <img class="thumbnail" class="thumbnail" src="/image-product-1-thumbnail.jpg" alt="">
+      <img class="thumbnail" src="/image-product-2-thumbnail.jpg" alt="">
+      <img class="thumbnail" src="/image-product-3-thumbnail.jpg" alt="">
+      <img class="thumbnail" src="/image-product-4-thumbnail.jpg" alt="">
+      
+
+    </div>
+
+  </div>
+
+<div class="cart-info">
+  <h5>SNEAKERS COMPANY</h5>
+
+  <h1>Fall Limited Edition Sneakers</h1>
+
+  <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+  <div class="pricing">
+    <span>
+  <h3>$125.00</h3>
+  <h5>50%</h5>
+</span>
+  <h6>$250.00</h6>
+</div>
+<div class="button-info">
+<button class="addbtn"><img id="minus" src="/icon-minus.svg" alt=""><p id="value">0</p><img id="add"  src="/icon-plus.svg" alt=""></button>
+
+  <button class="cartbtn">
+    <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#fff" fill-rule="nonzero"/></svg>
+  Add to cart
+</button>
+</div>
+</div>
+</section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</div>
+
+
+<script>
+  
+  
+
+  let hamburger = document.querySelector('.hamburger');
+    let menu = document.querySelector('.menu');
+    let isActive = false;
+
+    function toggleMenu() {
+      isActive = !isActive; // Toggle the active state
+
+      hamburger.classList.toggle('active');
+      menu.classList.toggle('active');
+
+      if (isActive) {
+        document.addEventListener('click', closeMenu);
+      } else {
+        document.removeEventListener('click', closeMenu);
+      }
+    }
+
+    function closeMenu(event) {
+      if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+        isActive = false;
+        hamburger.classList.remove('active');
+        menu.classList.remove('active');
+        document.removeEventListener('click', closeMenu);
+      }
+    }
+
+
+
+
+
+
+let don = document.querySelector('.don')
+function close1() {
+   if (don.style.display === 'none') {
+    don.style.display =  'block'
+    // help.style.display = 'none'
+  } else {
+    don.style.display =  'none'
+   
+  }
+}
+
+
+  </script>
+
+</body>
+</html>
